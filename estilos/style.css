@@ -1,0 +1,94 @@
+@charset "UTF-8";
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: green;
+    position: relative;
+}
+header {
+    background-color: chartreuse;
+    box-shadow: 0px 0px 5px;
+    font-size:large;
+    font-weight: bold;
+    padding: 10px;
+    color: blue;
+    position: sticky;
+    top: 0px;
+}
+ header > h1, p {
+    text-align: center;
+}
+header > nav {
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+header > nav > a {
+    color: blue;
+    padding-left: 10px;
+    
+  
+}
+header > nav > a:hover {
+    text-decoration: none;
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+main {
+    margin: 0% 2%;
+    background-color: rgba(128, 255, 0, 0.856);
+    font-size: 1.1rem;
+}
+ body > main > article > h1 {
+    text-align: center;
+}
+main > article > h1, h2, h3 {
+    text-indent: 20px;
+    text-align: justify;
+}
+article > p {
+    text-indent: 20px;
+    padding: 20px;
+
+}
+main > article > img, iframe {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline ;
+}
+aside {
+     background-color: rgba(170, 252, 89, 0.349);
+     margin: 10px;
+}
+ul, li {
+    margin: 0% 3%;
+   
+}
+p#paragrafo-solto {
+    color: rgb(219, 218, 218);
+}
+footer {
+    background-color: rgb(195, 253, 138);
+    padding: 60px;
+    text-align: center;
+    color: black;
+}
+footer > section > a > img {
+    border-radius: 50%;
+    height:50px;
+    
+}
+ footer > section > span {
+    padding: 10px;
+}
