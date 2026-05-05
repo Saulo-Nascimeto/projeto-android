@@ -23,21 +23,17 @@ header {
     text-align: center;
 }
 header > nav {
-    text-align: right;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
+display: flex;
+justify-content: end;
+flex-wrap: wrap;
 }
 header > nav > a {
     color: blue;
     padding-left: 10px;
-    
-  
+    text-decoration: none;
 }
 header > nav > a:hover {
-    text-decoration: none;
-    background-color: yellowgreen;
-    border-radius: 10px;
+    text-decoration: underline;
 }
 main {
     margin: 0% 2%;
@@ -53,8 +49,6 @@ main > article > h1, h2, h3 {
 }
 article > p {
     text-indent: 20px;
-    padding: 20px;
-
 }
 main > article > img, iframe {
     display: block;
@@ -71,9 +65,13 @@ aside {
      background-color: rgba(170, 252, 89, 0.349);
      margin: 10px;
 }
+
 ul, li {
     margin: 0% 3%;
-   
+    column-count: 2;
+}
+li {
+    width: 50%;
 }
 p#paragrafo-solto {
     color: rgb(219, 218, 218);
