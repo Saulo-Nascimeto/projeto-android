@@ -1,93 +1,109 @@
 @charset "UTF-8";
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body {
-    background-color: green;
-    position: relative;
+@font-face {
+    font-family: idroid;
+    src: url(../fonte.otf);
 }
-header {
-    background-color: chartreuse;
-    box-shadow: 0px 0px 5px;
-    font-size:large;
-    font-weight: bold;
-    padding: 10px;
-    color: blue;
-    position: sticky;
-    top: 0px;
-}
- header > h1, p {
-    text-align: center;
-}
-header > nav {
-display: flex;
-justify-content: end;
-flex-wrap: wrap;
-}
-header > nav > a {
-    color: blue;
-    padding-left: 10px;
+body a {
     text-decoration: none;
 }
-header > nav > a:hover {
+body a:hover {
     text-decoration: underline;
 }
-main {
-    margin: 0% 2%;
-    background-color: rgba(128, 255, 0, 0.856);
-    font-size: 1.1rem;
-}
- body > main > article > h1 {
+header {
+    border: 1px solid black;
+     text-shadow: 0px 1px 1px black;
+    background-image: linear-gradient(to right,#3CD681, #37C878, #2FA966, #2C9D5F, #2B975A, #247C4B, #217346, #1F6D41);
     text-align: center;
+    color: white;
+    position: sticky;
+    top: 0%;
 }
-main > article > h1, h2, h3 {
+header > p {
+    font-size: 0.9em;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+nav > a:hover {
+    text-decoration: underline;
+    color: #3CD681;
+}
+p {
+    margin: 1em 1em; 
+   text-indent: 20px;
+   font-size: 1.1em;
+}
+main {
+    background: #84E1AD;
+}
+article {
+    background-color: white;
+    border: 1px solid black;
+    margin: 0em 1.0em;
+}
+main h2, h3{
+    font-family: idroid;
     text-indent: 20px;
     text-align: justify;
+    color: #4D8566;
 }
-article > p {
-    text-indent: 20px;
+main  h3 {
+    background-image: linear-gradient(to right, #3cd6814d, white);
 }
-main > article > img, iframe {
+main img {
+   display: block;
+   margin: auto;
+   max-width: 100%;
+}
+main iframe {
     display: block;
     margin: auto;
     max-width: 100%;
 }
-a {
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline ;
+main h4 {
+    text-indent: 20px;
+    background-color: #2FA866;
+    color: white;
+    padding: 1em 0em;
 }
 aside {
-     background-color: rgba(170, 252, 89, 0.349);
-     margin: 10px;
-}
-
-ul, li {
-    margin: 0% 3%;
-    column-count: 2;
-}
-li {
-    width: 50%;
-}
-p#paragrafo-solto {
-    color: rgb(219, 218, 218);
-}
-footer {
-    background-color: rgb(195, 253, 138);
-    padding: 60px;
-    text-align: center;
-    color: black;
+    background-color: #C5EBD6;
+    border-radius: 5px;
+    margin: 1em 1em;
+    padding: 1em;
     font-weight: bold;
 }
-footer > section > a > img {
+ aside ul {
+    column-count: 2;
+    list-style-type: none;
+    margin: 0px 16px;
+}
+footer {
+ padding: 3.0em;
+ background-color: #3CD681;
+}footer > section#p-footer p {
+    margin: 0%;
+    text-align: center;
+}
+footer > section#img-footer  img {
     border-radius: 50%;
-    height:50px;
-    
+    height: 40px;
+    margin: 10px 0px;
 }
- footer > section > span {
-    padding: 10px;
+#img-footer {
+    display: flex;
+    justify-content: center;
 }
+
