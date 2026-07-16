@@ -53,7 +53,14 @@ article {
     border: 1px solid black;
     margin: 0em 1.0em;
 }
-main h2, h3{
+main h2 {
+    font-family: idroid;
+    text-indent: 20px;
+    text-align: justify;
+    color: #4D8566;
+    text-align: center;
+}
+main  h3{
     font-family: idroid;
     text-indent: 20px;
     text-align: justify;
